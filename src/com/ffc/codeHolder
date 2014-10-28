@@ -1,0 +1,174 @@
+ 
+ 
+ 
+ 
+ <item >Plane Shapes</item>
+        <item >Solid Shapes</item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60dip"
+        android:text="@string/hello"
+        android:shadowColor="#1868b2"
+		android:shadowRadius="2.0"
+		android:shadowDy="5.0"
+		android:shadowDx="5.0"
+		android:textColor="#36ff00"
+		android:padding="15dip"
+         />
+ 
+ switch (position)
+        {
+        	case 0:
+        	{
+        		words = getResources().getStringArray(R.array.bigword1);
+        		break;
+        	}
+        	case 1:
+        	{
+        		words = getResources().getStringArray(R.array.bigword2);
+        		break;
+        	}
+        	case 2:
+        	{
+        		words = getResources().getStringArray(R.array.numroc);
+        		break;
+        	}
+        	case 3:
+        	{
+        		words = getResources().getStringArray(R.array.bigword1);
+        		shuffleArray(words);
+        		break;
+        	}
+        	case 4:
+        	{
+        		words = getResources().getStringArray(R.array.bigword2);
+        		shuffleArray(words);
+        		break;
+        	}
+        	case 5:
+        	{
+        		words = getResources().getStringArray(R.array.numroc);
+        		shuffleArray(words);
+        		break;
+        	}
+        	default:
+        	{
+        		words = getResources().getStringArray(R.array.numroc);
+        		break;
+        	}
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        final Button forwardBtn = (Button) findViewById(R.id.forward);
+        
+        forwardBtn.setOnClickListener(new View.OnClickListener() 
+        {
+            public void onClick(View v) 
+            {	
+            	if(isRandom == false)
+            	{
+            		if(wordCnt < (wordNum - 1))
+                	{
+                		wordCnt = wordCnt + 1;
+                		TextView wordView = (TextView)findViewById(R.id.word);
+                    	wordView.setText(words[wordCnt]);
+                	}
+                	else
+                	{
+                		wordCnt = 0;
+                	}     
+            	}
+            	else
+            	{
+            		Random r = new Random();
+                	
+            		wordCnt = r.nextInt(wordNum - 1);
+            		
+            		Log.d("XXX", "forwardr = " + r.toString());
+            		Log.d("XXX", "forwardwordCnt = " + wordCnt);
+                	Log.d("XXX", "forwardwordNum = " + wordNum);
+            		
+            		TextView wordView = (TextView)findViewById(R.id.word);
+                	wordView.setText(words[wordCnt]);
+            		
+            	}
+            	      	
+            }
+        });
+
+        final Button backwardBtn = (Button) findViewById(R.id.backward);
+        
+        backwardBtn.setOnClickListener(new View.OnClickListener() 
+        {
+            public void onClick(View v) 
+            {
+            	
+            	if(isRandom == false)
+            	{
+            		if(wordCnt > 0)
+                	{
+                		wordCnt = wordCnt - 1;
+                		TextView wordView = (TextView)findViewById(R.id.word);
+                    	wordView.setText(words[wordCnt]);
+                	}
+                	else
+                	{
+                		wordCnt = 0;
+                	} 
+            	}
+            	else
+            	{
+            		Random r = new Random();
+                	
+            		wordCnt = r.nextInt(wordNum - 1);
+            		
+            		Log.d("XXX", "backwardr = " + r.toString());
+            		Log.d("XXX", "backwardwordCnt = " + wordCnt);
+                	Log.d("XXX", "backwardwordNum = " + wordNum);
+            		
+            		TextView wordView = (TextView)findViewById(R.id.word);
+                	wordView.setText(words[wordCnt]);
+            		
+            	}
+            	
+            }
+        });
+        
+        
+         /*
+        if(isRandom == false)
+    	{
+        	wordView.setText(words[wordCnt]);
+    	}
+        else
+        {
+        	Random r = new Random();
+        	wordCnt = r.nextInt(wordNum - 1);
+        	wordView.setText(words[wordCnt]);
+        }
+        */
+        

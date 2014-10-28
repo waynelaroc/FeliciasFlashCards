@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Felicia\'s Flash Cards!</string>
+    <string name="app_name">Felicia\'s Flash Cards</string>
+	<string name="Forward">Forward</string>
+    <string name="Backwards">Backward</string>
+    <string name="push">Press the Buttons to move through the Cards</string>
+    
+</resources>

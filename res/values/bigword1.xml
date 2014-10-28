@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bigword1">
+        <item>the</item>
+        <item>is</item>
+        <item>a</item>
+        <item>and</item>
+        <item>it</item>
+        <item>in</item>
+        <item>I</item>
+        <item>you</item>
+        <item>of</item>
+        <item>to</item>
+        <item>she</item>
+        <item>like</item>
+        <item>see</item>
+        <item>said</item>
+        <item>he</item>
+        <item>on</item>
+        <item>are</item>
+        <item>was</item>
+        <item>for</item>
+        <item>my</item>
+        <item>at</item>
+        <item>we</item>
+        <item>go</item>
+        <item>do</item>
+        <item>has</item>
+        <item>this</item>
+        <item>have</item>
+        <item>what</item> 
+        <item>with</item>
+        <item>they</item>
+        <item>play</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>nine</item>
+        <item>ten</item>
+    </string-array>
+    
+</resources>

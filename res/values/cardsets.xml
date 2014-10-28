@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="cardsets">
+        <item>Letters A-Z  Ordered</item>
+        <item>Letters a-z  Ordered</item>
+        <item>Sight Words  Ordered</item>
+        <item>Numbers 1-20 Ordered</item>
+        <item>Letters A-Z  Random</item>
+        <item>Letters a-z  Random</item>
+        <item>Sight Words  Random</item>
+        <item>Numbers 1-20 Random</item>
+     </string-array>
+</resources>

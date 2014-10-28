@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string-array name="bigword2">
+        <item>as</item>
+        <item>he</item>
+        <item>on</item>
+        <item>are</item>
+        <item>was</item>
+        <item>for</item>
+        <item>his</item>
+        <item>at</item>
+        <item>be</item>
+        <item>by</item>
+        <item>at</item>
+        <item>or</item>
+        <item>one</item>
+        <item>had</item>
+        <item>this</item>
+        <item >have</item>
+        <item >from</item>
+        <item >with</item>
+        <item >they</item>
+    </string-array> 
+</resources>
